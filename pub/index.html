@@ -1,321 +1,164 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-<head>
-<title>Stepping Stones Preschool</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stepping Stones Preschool</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
 
-<style type="text/css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"></link>
 
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"></link>
 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-body {background-color:#FFF;
-		margin:0px;
-		font-family:Arial, Helvetica, sans-serif;
-		border-style:none;}
-		
-a:link {color:inherit;
-		text-decoration:none;}
-		
-a:visited {text-decoration:none;
-color:inherit;}
-		
+        <link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
 
-			
-img		{border:none;}
-
-			
-h1			{font-family:Arial, Helvetica, sans-serif;
-			font-size:20px;
-			font-weight:100;
-			color:#FFF;
-			}
-			
-h2			{font-size: 14px;
-			font-weight:bold;
-			margin:0px;
-			line-height:15px;
-			font-family:Arial, Helvetica, sans-serif;
-			color:#FFF;
-			}
-			
-h3			{font-size: 14px;
-			font-weight:100;
-			margin:0px;
-			
-			font-family:Arial, Helvetica, sans-serif;
-			color:#333;
-			}
-			
-h4			{font-size: 16px;
-			font-weight:100;
-			margin:0px;
-			
-			font-family:Arial, Helvetica, sans-serif;
-			color:#339999;
-			}
-			
-h5			{font-size: 16px;
-			font-weight:bold;
-			margin:0px;
-			
-			font-family:Arial, Helvetica, sans-serif;
-			color:#C60;
-			}
-			
-div#bg {
-	position:fixed; 
-	top:-50%; 
-	left:-50%; 
-	width:200%; 
-	height:200%;
-	z-index:-1;
-}
-div#bg img {
-	position:absolute; 
-	top:0; 
-	left:0; 
-	right:0; 
-	bottom:0; 
-	margin:auto; 
-	min-width:50%;
-	min-height:50%;
-	z-index:-1;
-}
-
-div#banner	{
-	position:relative;
-		width:800px;
-		height:215px;
-		margin-left:auto;
-		margin-right:auto;
-		display:block;
-		top:-65px;
-		z-index:1;
-		
-	
-		}
-	
-		
-#nav{
-  position:relative;
-  border:none;
-  list-style:none;
-  margin:0;
-  padding:0;
-  text-align:center;
-  z-index:2;
-  font-family:Arial, Helvetica, sans-serif;
-  color:#FFF;
-  top:110px;
-  font-size:14px;
-}
-#nav li{
-  display:inline;
-  z-index:2;
-  color:#FFF;
-}
-#nav a{
-  display:inline-block;
-  padding:10px;
-  z-index:2;
-  color:#FFF;
-}
-
-div#facebook	{
-	position:relative;
-		width:26px;
-		height:27px;
-		margin-left:auto;
-		margin-right:auto;
-		display:block;
-		top:96px;
-		left:-304px;
-		z-index:500;
-		}
-
-div#content {
-	z-index:10;
-	position:relative;
-	margin-left:auto;
-	margin-right:auto;
-	top:-705px;
-	width:676px;
-	letter-spacing:1px;
-}
-
-div#content2 {
-	z-index:10;
-	position:relative;
-	margin-left:auto;
-	margin-right:auto;
-	top:-720px;
-	width:676px;
-}
-
-div#content3 {
-	z-index:10;
-	position:relative;
-	margin-left:auto;
-	margin-right:auto;
-	top:-695px;
-	width:676px;
-	letter-spacing:1px;
-}
-
-div#content4 {
-	z-index:10;
-	position:relative;
-	margin-left:auto;
-	margin-right:auto;
-	top:-685px;
-	width:676px;
-	letter-spacing:1px;
-}
-
-div#button {
-	z-index:100;
-	position:relative;
-	margin-left:auto;
-	margin-right:auto;
-	top:-495px;
-	width:750px;
-}
-
-div#content5 {
-	z-index:10;
-	position:relative;
-	margin-left:auto;
-	margin-right:auto;
-	top:-675px;
-	width:676px;
-	letter-spacing:1px;
-}
-
-div#content6 {
-	z-index:10;
-	position:relative;
-	margin-left:auto;
-	margin-right:auto;
-	top:-710px;
-	width:676px;
-	
-}
-
-div#center
-	{display:block;
-	margin-left:auto;
-	margin-right:auto;}
-	
+        <link href="/common.css" rel="stylesheet" type="text/css"/>
 
 
-div#box	{
-	position:relative;
-		width:750px;
-		height:765px;
-		margin-left:auto;
-		margin-right:auto;
-		display:block;
-		top:-25px;
-		z-index:1;}
-		
-div#highlights	{
-	position:relative;
-		width:627px;
-		height:31px;
-		margin-left:auto;
-		margin-right:auto;
-		display:block;
-		top:-900px;
-		z-index:90;
-		
-	
-		}
-		
+    </head>
+
+    <body>
+        <div id="bg">
+            <div id="img"><img src="img9.jpg" alt="paintbrushes"/>
+            </div>
+        </div>
+        <div role="banner" class="banner container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img src="banner-left.png" alt="left banner trim" style="z-index: 20;left:5px; position:absolute; height:114%;"/>
+                    <img src="banner-right.png" alt="right banner trim" style="z-index: 20; position:absolute;right: 5px; height: 120%;"/>
 
 
-	
-</style>
+                    <div id="bannerx" style="padding:15px 0px 0px 0px">
+                        <img src="chalkboard.png" alt="Stepping Stones Preschool - phone 319-338-8534" style="width:70%;margin:0px auto;position:relative;display:block;"/>
+                    </div>
+
+                    <div id="navbar" role="navigation" aria-label="main navigation">
+                        <ul class="nav">
+                            <li><a href="/index.html">HOME</a></li>
+                            <li><a href="/instructors.html">INSTRUCTORS</a></li>
+                            <li><a href="/curriculum.html">CURRICULUM</a></li>
+                            <li><a href="/programs.html">PROGRAMS/TUITION</a></li>
+                            <li><a href="/gallery.html">GALLERY</a></li>
+                            <li><a href="/contact.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <img src="banner-bottom.png" alt="bottom banner trim" style="z-index: 20; position:absolute;left:4px;top: 85%; width: 98%;"/>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div role="main" class="main-content container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="pull-right" >
+                        <a href="https://www.facebook.com/Stepping-Stones-Preschool-Inc-756095091202812/">
+                            <img src="facebook.png" alt="facebook"/>
+                        </a>
+                    </div>  
+                    <h1>
+                        WELCOME!
+                    </h1>
+
+                    <p class="cursive-orange">
+                        High Quality | Affordable | Parent Involvement | Large Indoor Gym
+                    </p>
+
+                    <p><strong>At Stepping Stones Preschool students develop the skills they need
+                            for Kindergarten while having fun LEARNING! These include the most important independent 
+                            skills Kindergarten teachers say kids should know.</strong><br /><br />
+                    </p>   
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <table id="school-classes" class="table table-responsive">
+                        <caption class="srx-only">Pick the program that is best for your child:</caption>
+                        <thead>
+                            <tr>
+                                <th>CLASS</th>
+                                <th>AGE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2 DAYS (T/TH)</td>
+                                <td>3-4 YEARS</td>
+                            </tr>
+                            <tr>
+                                <td>3 DAYS (M/W/F)</td>
+                                <td>4-5 YEARS</td>
+                            </tr>
+                            <tr>
+                                <td>5 DAYS (M-F)</td>
+                                <td>PRE-KINDERGARTEN</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <div style="text-align:center;vertical-align: middle;"><a href="registrationform1.pdf" target="_blank">
+                            <img id="register" alt="Register Now" src="registernow_cropped.png"/>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-lg-12">
+                    <p>
+                        <i>All classes offered are half day, mornings.</i>
+                        <br /><br />
+                        <strong>Special Features: Field Trips     •    Yoga     •    Music/Drama     •          
+                            Special Guests    •    Playtime in Large Indoor Gym<br /><br />
+                            MWF program also includes: 
+                            Spanish     •     Sign Language     •     Kindergarten Readiness
+                        </strong>
+                        <br /><br />
+
+                        Stepping Stones Preschool is affiliated with the 
+                        <strong>Iowa City Community School District</strong> and the <strong>State Wide Voluntary Preschool Program (SWVPP).</strong> 
+                        Tuition for qualifying 4-year-olds is supplemented by SWVPP and so offered at a discounted rate.
+                        <br /><br />
+                        Stepping Stones Preschool is a non-profit corporation, licensed by the state of Iowa. We are non-religiously affiliated and do not discriminate with regard to race, gender, religious creed, or national origin.
+
+                    </p>
 
 
-</head>
+                </div>
+            </div>
+        </div>
 
+        <div class="footer container" role="contentinfo">
+            <div class="row visible-xs-block visible-sm-block">
+                <div class="col-sm-12">
+                    STEPPING STONES PRESCHOOL
+                </div>
+                <div class="col-sm-12">
+                    3001 MUSCATINE AVE
+                </div>
+                <div class="col-sm-12">
+                    IOWA CITY IA 52240
+                </div>
+                <div class="col-sm-12">
+                    319.338.8534
+                </div>
+            </div>
+            <div class="row hidden-xs hidden-sm">
+                <div class="col-md-12">
+                    STEPPING STONES PRESCHOOL &nbsp;|&nbsp;
+                    3001 MUSCATINE AVE &nbsp;|&nbsp;
+                    IOWA CITY IA 52240 &nbsp;|&nbsp;
+                    319.338.8534
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12" style="font-size: 0.6em">
+                    &COPY;COPYRIGHT 2012. STEPPING STONES PRESCHOOL. ALL RIGHTS RESERVED
+                </div>
+            </div>
+        </div>
 
-</div>
-
-<body>
-
-<div id="facebook">
-<a href="https://www.facebook.com/Stepping-Stones-Preschool-Inc-756095091202812/"><img src="facebook.png" width="26" height="27" /></a>
-</div>
-
-<ul id="nav">
-  <li><a href="http://steppingstonespreschool.org">HOME</a></li>
-  <li><a href="http://steppingstonespreschool.org/instructors.html">INSTRUCTORS</a></li>
-  <li><a href="http://steppingstonespreschool.org/curriculum.html">CURRICULUM</a></li>
-  <li><a href="http://steppingstonespreschool.org/programs.html">PROGRAMS/TUITION</a></li>
-  <li><a href="http://steppingstonespreschool.org/gallery.html">GALLERY</a></li>
-  <li><a href="http://steppingstonespreschool.org/contact.html">CONTACT</a></li>
-</ul>
-  
-
-<div id="banner">
-
-<img src="banner.png" alt="Stepping Stones Preschool" width="800" height="215" /></a>
-</div>
-
-
-
-<div id="box">
-<img src="hpbox2.png" width="750" height="765" /></a>
-</div>
-
-
-
- 
-  <div id="button"><a href="registrationform1.pdf" target="_blank"><img src="registernow.png" width="750" height="42"/></a></div>
-  
-  <div id="content2">
-    <h3><b>At Stepping Stones Preschool students develop the skills they need for Kindergarten while having fun LEARNING! These include the most important independent skills Kindergarten teachers say kids should know.</b><br /><br />
-    <b>Pick the program that is best for your child:</b><br /></h3>
-  </div>
-
-<h4>
-<div id="content"><b>CLASS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	AGE</b></div></h4>
-
-<h3>
-  <div id="content3">2 DAYS (T/TH)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3-4 YEARS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></h3>
-  
-<h3>
-  <div id="content4">3 DAYS&nbsp;(M/W/F)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4-5 YEARS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></h3>
-
-<h3>
-  <div id="content5">5 DAYS (M-F)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRE-KINDERGARTEN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></h3>
-
-
-<div id="highlights"><img src="highlights.png" width="627" height="31" /></a></div>
-
-<h3><div id="content6"><br />
-<i>All classes offered are half day, mornings.</i><br /><br /><b>Special Features: Field Trips     •    Yoga     •    Music/Drama     •          
-Special Guests    •    Playtime in Large Indoor Gym<br /><br />
-MWF program also includes: 
-Spanish     •     Sign Language     •     Kindergarten Readiness
-</b><br /><br />
-Stepping Stones Preschool is affiliated with the <b>Iowa City Community School District</b> and the <b>State Wide Voluntary Preschool Program (SWVPP).</b> Tuition for qualifying 4-year-olds is supplemented by SWVPP and so offered at a discounted rate.<br /><br />
-Stepping Stones Preschool is a non-profit corporation, licensed by the state of Iowa. We are non-religiously affiliated and do not discriminate with regard to race, gender, religious creed, or national origin.
-
-</div>
-</h3>
-
-<div id="bg">
-	<div id="img"><img src="img9.jpg" alt="paintbrushes">
-</div>
- 
-
-
-
-
-
-
-</div>
-</body>
+    </body>
 </html>
