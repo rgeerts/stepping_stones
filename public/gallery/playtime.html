@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stepping Stones Preschool</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"></link>
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"></link>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+        <link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
+
+        <link href="/common.css" rel="stylesheet" type="text/css"/>
+        <script> 
+            $(document).ready( function(){
+                var includes = $('.html-include').toArray();
+                includes.forEach(function(el){
+                    $(el).load($(el).attr('data-href'));
+                });
+            });
+        </script> 
+        
+    </head>
+
+    <body>
+        
+        <div id="page-bg" style="background-image: url('/backgrounds/img5.jpg');">
+        </div>
+  
+        <div class="html-include" data-href="/header/header.html"></div>
+        
+        <div role="main" class="main-content container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="pull-right" >
+                        <a href="https://www.facebook.com/Stepping-Stones-Preschool-Inc-756095091202812/">
+                            <img src="/facebook.png" alt="facebook"/>
+                        </a>
+                    </div>  
+                    <h1>
+                        PLAYTIME GALLERY
+                    </h1>
+                </div>
+                
+                <img src="/gallery/tall_playtime.png" alt="playtime pictures" style="width:100%; height: auto;"/>
+            </div>
+            
+        </div>
+        
+        <div class="html-include" data-href="/footer/footer.html"></div>
+        
+    </body>
+</html>
