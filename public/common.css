@@ -26,29 +26,25 @@ h2{
     display:inline;
 }
 
-div#banner-bockdrop-bottom-left {
-    left: 1%;
+div#banner-bockdrop-bottom-left, div#banner-bockdrop-bottom-right {
     bottom: -17%;
     position: absolute;
     display: block;
     height: 117%;
-    width: 55%;
-    background: url('/header/banner-backdrop.png') left bottom;
+    background-image: url('/header/banner-backdrop.png');
     background-repeat: no-repeat;
     z-index: 20;
     background-size: cover;
 }
+div#banner-bockdrop-bottom-left {
+    left: 1%;
+    background-position: left bottom;
+    width:51%;
+}
 div#banner-bockdrop-bottom-right {
     right: 0;
-    bottom: -17%;
-    position: absolute;
-    display: block;
-    height: 117%;
-    width: 94%;
-    background: url('/header/banner-backdrop.png') right bottom;
-    background-repeat: no-repeat;
-    z-index: 20;
-    background-size: cover;
+    background-position: right bottom;
+    width:94%
 }
 
 div#page-bg {
@@ -116,7 +112,6 @@ table#school-classes thead tr th {
 .banner.container {
     padding-left: 0px;
     padding-right: 0px;
-    background-color: #4c9689;
     //box-shadow: 0 0 20px 20px;// rgb(76,150,137 0.9);
 }
 
