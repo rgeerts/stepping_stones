@@ -128,7 +128,7 @@ div.main-content {
 }
 
 .cursive-orange {
-    font: 400 100px/1.3 'Galada', cursive;
+    font-family: 'Atma', cursive;
     font-size: 2em;
     color: #fca205;
     text-align: center;
